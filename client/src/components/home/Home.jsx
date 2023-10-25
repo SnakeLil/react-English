@@ -31,6 +31,7 @@ export default function Home() {
         setMean(res.data.Interpretation)  //将当前显示单词的意思更新为获取到的单词释义
         setRequest(false)
         setRotating(false)
+        console.log(res)
       } catch (err) {
         console.log(err)
         setRequest(true)

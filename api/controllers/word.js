@@ -22,3 +22,13 @@ export const getRandomWord = (req, res) =>{
         let random = wordArr[Math.ceil(Math.random()*5495)]
         return res.status(200).json(random)
 }
+export const getAllWord = (req,res)=>{
+    const data = wordArr
+    const resData = {
+        code:200,
+        message:'成功',
+        ok:true,
+        data:data
+    }
+    return res.status(200).json(resData)
+}
